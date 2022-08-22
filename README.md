@@ -10,5 +10,5 @@
 # Screenshots
 # Features
 - Nothing special yet
-# Licence
+# License
 Thie respository is licenced under the Apache License 2.0
