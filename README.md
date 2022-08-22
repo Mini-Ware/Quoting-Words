@@ -7,8 +7,13 @@
   <p>An Android app that gives you random inspiring quotes with beautiful background</p>
 </div>
 
-# Screenshots
+# Screen Recording
 # Features
-- Nothing special yet
+- Simple design/Easy to use
+- Over 100+ quotes
+- Over 50+ images
+- Background music (Coming soon)
+# Credits
+Logo was created by Mini-Ware. Images are free and taken from Pexels.
 # License
-Thie respository is licenced under the Apache License 2.0
+This app is licenced under the Apache License 2.0
