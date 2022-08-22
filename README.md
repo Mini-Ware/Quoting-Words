@@ -11,4 +11,4 @@
 # Features
 - Nothing special yet
 # Licence
-No licence yet
+Thie respository is licenced under the Apache License 2.0
