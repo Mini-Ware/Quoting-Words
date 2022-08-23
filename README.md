@@ -8,6 +8,13 @@
 </div>
 
 # Screenshots
+
+<div align="center" width="100%">
+  <img style="width:200px; height:380px;" src="ss0.jpg">
+  <img style="width:200px; height:380px;" src="ss1.jpg">
+  <img style="width:200px; height:380px;" src="ss2.jpg">
+</div>
+
 # Features
 - Simple design/Easy to use
 - Over 50+ inspiring quotes
