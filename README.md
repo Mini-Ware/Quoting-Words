@@ -7,7 +7,7 @@
   <p>An Android app that gives you random inspiring quotes with beautiful background</p>
 </div>
 
-# Screenshots
+#
 
 <div align="center" width="100%">
   <img style="width:200px; height:380px;" src="ss0.jpg">
