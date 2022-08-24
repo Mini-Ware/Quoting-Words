@@ -25,4 +25,4 @@ Get the latest release of the app [here](https://github.com/Mini-Ware/Quoting-Wo
 # Credits
 Logo was created by [Mini-Ware](https://github.com/Mini-Ware). Images are free and taken from [Pexels](https://www.pexels.com/).
 # License
-This app is licenced under the [Apache License 2.0](https://github.com/Mini-Ware/Quoting-Words/blob/main/LICENSE)
+This app is licensed under the [Apache License 2.0](https://github.com/Mini-Ware/Quoting-Words/blob/main/LICENSE)
