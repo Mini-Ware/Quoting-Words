@@ -19,7 +19,6 @@
 - Simple design/Easy to use
 - Over 50+ inspiring quotes
 - Over 10+ quality images
-- Background music (Coming soon)
 # Download
 Get the latest release of the app [here](https://github.com/Mini-Ware/Quoting-Words/releases)!
 # Credits
