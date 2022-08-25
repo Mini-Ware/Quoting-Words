@@ -1,6 +1,8 @@
 package com.github.miniware.quotingwords;
 
+import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -23,22 +25,14 @@ public class Feed extends AppCompatActivity {
         TextView tv = (TextView) findViewById(R.id.show);
         tv.setText(feed.updateStatus());
 
-        String uri = "@drawable/" + feed.updateImage();
-        int imageResource = getResources().getIdentifier(uri, null, getPackageName());
-        Drawable resource = getResources().getDrawable(imageResource);
-        ImageView iv = (ImageView) findViewById(R.id.picture);
-        iv.setImageDrawable(resource);
+        updateImage(feed);
 
         findViewById(R.id.picture).setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.show);
                 tv.setText(feed.updateStatus());
 
-                String uri = "@drawable/"+feed.updateImage();
-                int imageResource = getResources().getIdentifier(uri, null, getPackageName());
-                Drawable resource = getResources().getDrawable(imageResource);
-                ImageView iv = (ImageView) findViewById(R.id.picture);
-                iv.setImageDrawable(resource);
+                updateImage(feed);
             }
         });
 
@@ -50,5 +44,12 @@ public class Feed extends AppCompatActivity {
                 tv.setMovementMethod(LinkMovementMethod.getInstance());
             }
         });
+    }
+
+    private void updateImage(Generator feed) {
+        @DrawableRes int imgResId = feed.updateImage();
+        Drawable resource = ResourcesCompat.getDrawable(getResources(), imgResId, null);
+        ImageView iv = (ImageView) findViewById(R.id.picture);
+        iv.setImageDrawable(resource);
     }
 }
