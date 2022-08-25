@@ -1,5 +1,8 @@
 package com.github.miniware.quotingwords;
 
+import androidx.annotation.DrawableRes;
+import androidx.annotation.IntegerRes;
+
 public class Generator {
     private String[] quotes = {
             "The most important thing is to enjoy your life – to be happy – it’s all that matters.\n\nAudrey Hepburn",
@@ -81,25 +84,27 @@ public class Generator {
             "Someone’s sitting in the shade today because someone planted a tree a long time ago.\n\nWarren Buffett",
             "Doubt is not a pleasant condition, but certainty is absurd.\n\nVoltaire"
     };
-    private String[] images = {
-            "tropical",
-            "bluesea",
-            "redsea",
-            "waves",
-            "dolphin",
-            "sunset",
-            "bridge",
-            "coast",
-            "shore",
-            "rocks",
-            "dock",
-            "sandy",
-            "cave"
+
+    private @DrawableRes int[] images = {
+            R.drawable.tropical,
+            R.drawable.bluesea,
+            R.drawable.redsea,
+            R.drawable.waves,
+            R.drawable.dolphin,
+            R.drawable.sunset,
+            R.drawable.bridge,
+            R.drawable.coast,
+            R.drawable.shore,
+            R.drawable.rocks,
+            R.drawable.dock,
+            R.drawable.sandy,
+            R.drawable.cave
     };
 
     private String status = "";
-    private String image = "";
+    private @DrawableRes int image;
     private String recent;
+    private @DrawableRes int recentImage;
 
     public String updateStatus(){
         this.recent = this.status;
@@ -109,9 +114,10 @@ public class Generator {
         return this.status;
     }
 
-    public String updateImage(){
-        this.recent = this.image;
-        while (this.recent == this.image){
+    @DrawableRes
+    public int updateImage(){
+        this.recentImage = this.image;
+        while (this.recentImage == this.image){
             this.image = this.images[(int)(Math.random() * this.images.length)];
         }
         return this.image;
