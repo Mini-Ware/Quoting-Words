@@ -108,7 +108,7 @@ public class Generator {
 
     public String updateStatus(){
         this.recent = this.status;
-        while (this.recent == this.status){
+        while (this.recent.equals(this.status)){
             this.status = this.quotes[(int)(Math.random() * this.quotes.length)];
         }
         return this.status;
