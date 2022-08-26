@@ -1,16 +1,12 @@
 package com.github.miniware.quotingwords;
 
-import android.content.res.Resources;
-
 import androidx.annotation.DrawableRes;
-import androidx.annotation.IntegerRes;
-import androidx.appcompat.app.AppCompatActivity;
 
-public class Generator extends AppCompatActivity{
-    Resources res = getResources();
-
-
-    private String[] quotes = res.getStringArray(R.array.quotes);
+public class Generator{
+    private String[] quotes;
+    Generator(String[] list){
+        this.quotes = list;
+    }
 
     private @DrawableRes int[] images = {
             R.drawable.tropical,
