@@ -4,6 +4,7 @@ import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Html;
@@ -19,7 +20,9 @@ public class Feed extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feed);
 
-        Generator feed = new Generator();
+        Resources res = getResources();
+        String[] quotes = res.getStringArray(R.array.quotes);
+        Generator feed = new Generator(quotes);
         TextView tv = (TextView) findViewById(R.id.show);
         ImageView iv = (ImageView) findViewById(R.id.picture);
 
